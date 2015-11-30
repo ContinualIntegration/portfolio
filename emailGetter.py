@@ -1,8 +1,8 @@
 '''
 Title: emailgetter.py
 Summary: returns email addresses in a ready to use format.
-This program takes a text file with email addresses that are separate by spaces and carriage returns.  
-It returns to the screen email addresses with semicolons after them.
+This program takes a text file with email addresses that are separated by spaces and carriage returns.  
+It returns, to the screen, email addresses with semicolons after them.
 
 Usage instructions: Put this file in a directory with a source text file.  Call the source file email.txt.
 Taken from continualintegration.com
