@@ -8,17 +8,17 @@ of a file whereas Linux's tail is based on the last lines of a file.
 
 Usage instructions:
 
-1) identify the file you want to tail.  If you don't know,
+1) identify the file you want to tail.  If you don't know which file,
 run this command from a Linux prompt:
 $ echo "abcdefghijklmnopqrstuvwxyz" > /tmp/tail.sample
 
-2) Save this program as tail.py
+2) Save this program (with or without these comments at the top) as tail.py
 
 3) Change the permissions like this:
 $ chmod +x tail.py
 
-4) Run this command (or replace the /tmp/tail.sample with
-the file location and name of file you want to tail):
+4) Run this command (or replace the "/tmp/tail.sample" text below with
+the file location and the name of file you want to tail):
 
 $ ./tail.py -c 10 /tmp/tail.sample
 (You can replace the 10 with the number of characters you want outputted.)
