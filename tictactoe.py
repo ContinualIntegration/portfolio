@@ -16,7 +16,6 @@ mark = 'z'
 goodlist = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 first = raw_input("Player 1, please enter which location you want to mark with X: ")
-a = b = c = d = e = f = g = h = i = j = ' '
 w, hh = 8, 5;
 a, b, c, d, e, f, g, h, i, j = ' ', ' ',' ', ' ',' ', ' ',' ', ' ',' ', ' '
 board = [[0 for x in range(w)] for y in range(hh)]
