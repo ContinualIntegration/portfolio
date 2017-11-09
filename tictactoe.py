@@ -90,8 +90,7 @@ def printer(goodlist) :
 
 def marker(loc, mark, r):
   if (loc == 'ltc'): a=mark; callagain(loc, r)
-  elif (loc == 'tm'): b=mark; callagain(loc, r)
-  elif (loc == 'tm'): c=mark; callagain(loc, r)
+  elif (loc == 'tm'): b=mark; callagain(loc, r) # no c on purpose
   elif (loc == 'rtc'): d=mark; callagain(loc, r)
   elif (loc == 'lm'): e=mark; callagain(loc, r)
   elif (loc == 'c'): f=mark; callagain(loc, r)
