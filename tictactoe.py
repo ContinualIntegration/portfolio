@@ -10,7 +10,7 @@ print "lbc is left-bottom-corner, bm is bottom-middle, rbc is right-bottom-corne
 print "***************************************************************"
 print "                                                                "
 print "Enter a cell based on the legend above."
-a, b, c, d, e, f, g, h, i, j = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
 r = 1
 mark = 'z'
 goodlist = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
