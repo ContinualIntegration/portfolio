@@ -1,5 +1,5 @@
 # Tic-tac-toe game in Python. Written by continualintegration.com.
-# "Cat's game" alert functionality will be added later.
+# The "cat's game" alert functionality will be added later.
 print "This is a two player game of tictactoe.  One person can pretend to be the other player."
 print "Both players should share a keyboard and monitor."
 print "The legend for squares in the grid is as follows: "
