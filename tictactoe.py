@@ -1,5 +1,4 @@
 # Tic-tac-toe game in Python. Written by continualintegration.com.
-# The "cat's game" alert functionality will be added later. # It is called Naughts and crosses in other countries.
 print "This is a two player game of tictactoe.  One person can pretend to be the other player."
 print "Both players should share a keyboard and monitor."
 print "The legend for squares in the grid is as follows: "
@@ -120,13 +119,26 @@ def checker(goodlist):
       if board[3][5] == 'X': print "Player 1 Wins!!!!!"; var1 = "stop"; quit()
       elif board[3][5] == 'O': print "Player 2 Wins!!!!!"; var1 = "stop"; quit()
       else: var1 = "go"
- if board[1][5] == board[2][3]:
+  if board[1][5] == board[2][3]:
     if board[2][3] == board[3][1]:
       if board[3][1] == 'X': print "Player 1 Wins!!!!!"; var1 = "stop"; quit()
-      elif board[3][1] == 'O': print "Player 2 Wins!!!!!"; var1 = "stop"; quit()
       else: var1 = "go"
+  catgamechecker(goodlist)  # See if it is a Cat's game (aka a tie).
   return var1
 
+def catgamechecker(goodlist):
+  if (goodlist[0] != " "):
+    if (goodlist[1] != " "):
+      if (goodlist[2] != " "):
+        if (goodlist[3] != " "):
+          if (goodlist[4] != " "):
+            if (goodlist[5] != " "):
+              if (goodlist[6] != " "):
+                if (goodlist[7] != " "):
+                  if (goodlist[8] != " "):
+                        print "Cat's Game.  Game over.  It was a tie."
+                        var1 = "stop";
+                        quit()
 
 def playeralt(let, r):
   if checker(goodlist) == "go":
