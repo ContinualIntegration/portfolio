@@ -1,5 +1,6 @@
 
 # Written by continualintegration.com
+# This is for Python version 2.
 """ Written by continualintegration.com.  Usage instructions:
     This program needs to be in the same directory as a file called list.txt.
     The content of list.txt can be as follows (with the last line being "Zuckerberg, Mark"):
