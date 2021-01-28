@@ -146,7 +146,18 @@ def telparser(astring):
 
 def finder(content):
     goodlist = []
-    final_list = []
+    finallist = []
+    try:      # It is easy to forget that the program needs an extra file.
+        open('list.txt', 'r') 
+    except FileNotFoundError:
+        print("")
+        print("*********************************")
+        print("FATAL ERROR")
+        print("You need to create a list.txt file that is in the same directory as this program.")
+        print("See this web page: http://www.continualintegration.com/miscellaneous-articles/how-do-you-write-a-python-program-to-simulate-a-dial-by-name-directory/")
+        print("Step #1 of the solution in the web page above will help you.")
+        print("The program will now exit.")
+        quit()
     prebook = open('list.txt', 'r')
     book = prebook.read()
     postbook = book.split('\n')
@@ -181,23 +192,23 @@ def finder(content):
 
         # Test 2nd letter of last name against the 3 letters of second key.
         if d10.upper() == item1.upper():
-            final_list.append(item)
+            finallist.append(item)
         elif d11.upper() == item1.upper():
-            final_list.append(item)
+            finallist.append(item)
         elif d12.upper() == item1.upper():
-            final_list.append(item)
+            finallist.append(item)
         else:
             if len(content[1]) > 3:
                 if d13.upper() == item1.upper():
-                    final_list.append(item)
-    if len(final_list) == 0:
-        final_list.append("No names matched that entry.")
+                    finallist.append(item)
+    if len(finallist) == 0:
+        finallist.append("No names matched that entry.")
 
-    return final_list
+    return finallist
 
 
 try:      # It is easy to forget that the program needs an extra file.
-    try_stanza = open('list.txt', 'r')
+    toprint = phone()
 except FileNotFoundError:
     print("")
     print("*********************************")
@@ -208,13 +219,11 @@ except FileNotFoundError:
     print("The program will now exit.")
     quit()
 
-
-to_print = phone()
-while to_print == 'DO_OVER_FLAG':
-    to_print = phone()
+while toprint == 'DO_OVER_FLAG':
+    toprint = phone()
 
 
-intermed = telparser(to_print)
+intermed = telparser(toprint)
 
 r = finder(intermed)
 print("We searched for matches and we found ...")

@@ -3,7 +3,7 @@
 Background:  Linux has a tail command that shows the last portion of a file.
 Sometimes you want to re-invent the wheel.  Why not have
 a tail program of your own?  Seriously, Python has great native file
-manipulation capabilities built-in.  This program prints out the last characters
+manipulation capabilities built-in. This program prints out the last characters
 of a file whereas Linux's tail is based on the last lines of a file.
 
 Usage instructions:
@@ -27,7 +27,9 @@ Written by continualintegration.com.
 '''
 
 #!/usr/bin/python2.7
-import os, sys
+import os
+import sys
+
 
 if len(sys.argv) == 2:
         os.system('tail ' + sys.argv[1])
