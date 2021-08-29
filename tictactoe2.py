@@ -1,4 +1,5 @@
 # Tic-tac-toe game in Python 2. Written by continualintegration.com.
+# Updated on 8/29/21.
 print "This is a two player game of tictactoe.  One person can pretend to be the other player."
 print "Both players should share a keyboard and monitor."
 print "The legend for squares in the grid is as follows: "
@@ -122,6 +123,7 @@ def checker(goodlist):
   if board[1][5] == board[2][3]:
     if board[2][3] == board[3][1]:
       if board[3][1] == 'X': print "Player 1 Wins!!!!!"; var1 = "stop"; quit()
+      elif board[3][1] == 'O': print "Player 2 Wins!!!!!"; var1 = "stop"; quit()
       else: var1 = "go"
   catgamechecker(goodlist)  # See if it is a Cat's game (aka a tie).
   return var1
