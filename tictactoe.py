@@ -168,6 +168,10 @@ def checker(goodlist):
                 print("Player 1 Wins!!!!!")
                 var1 = "stop"
                 quit()
+            elif board[3][1] == 'O':
+                print("Player 2 Wins!!!!!")
+                var1 = "stop"
+                quit()
             else:
                 var1 = "go"
     catgamechecker(goodlist)  # See if it is a Cat's game (aka a tie).
